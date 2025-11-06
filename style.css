@@ -1,0 +1,18 @@
+
+nav{
+  background: rgb(175, 255, 25);
+  border-radius: 15px;
+  padding: 50px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 150%;
+
+}
+nav ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
