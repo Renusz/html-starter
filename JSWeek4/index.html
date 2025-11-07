@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" href="gallery.css">
+	<script src = "gallery.js"></script>
+</head>
+<body onload="initPage()">
+	
+	<div id = "image">
+		Hover over an image below to display here.
+	</div>
+	
+	<img class = "preview" alt = "Awawa no gravity" src = "assets/awawagravedad.jpg" onmouseover = "upDate(this); changeOpacity(this);" onmouseout = "unDo(); resetOpacity(this);" onfocus="upDate(this); changeOpacity(this);" onblur="unDo(); resetOpacity(this);">
+	
+	<img class = "preview" alt = "Long Boy" src = "assets/awawalargo.jpg" onmouseover = "upDate(this); changeOpacity(this);" onmouseout = "unDo(); resetOpacity(this);" onfocus="upDate(this); changeOpacity(this);" onblur="unDo(); resetOpacity(this);">
+	
+	<img class = "preview" src = "assets/hyraxsurvivor.webp" alt = "The Survivor" onmouseover = "upDate(this); changeOpacity(this);" onmouseout = "unDo(); resetOpacity(this);" onfocus="upDate(this); changeOpacity(this);" onblur="unDo(); resetOpacity(this);">
+
+	<img class = "preview" alt = "Baby Awawa" src = "assets/babyawawa.jpeg" onmouseover = "upDate(this); changeOpacity(this);" onmouseout = "unDo(); resetOpacity(this);" onfocus="upDate(this); changeOpacity(this);" onblur="unDo(); resetOpacity(this);">
+	
+	<img class = "preview" alt = "Derp" src = "assets/hyrax1.jpeg" onmouseover = "upDate(this); changeOpacity(this);" onmouseout = "unDo(); resetOpacity(this);" onfocus="upDate(this); changeOpacity(this);" onblur="unDo(); resetOpacity(this);">
+	
+	<img class = "preview" src = "assets/hyrax2.jpg" alt = "Cute Awawa" onmouseover = "upDate(this); changeOpacity(this);" onmouseout = "unDo(); resetOpacity(this);" onfocus="upDate(this); changeOpacity(this);" onblur="unDo(); resetOpacity(this);">
+
+</body>
+</html>
