@@ -1,18 +1,124 @@
+/* Simple reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
 
-nav{
-  background: rgb(175, 255, 25);
-  border-radius: 15px;
-  padding: 50px;
+/* Typography and base */
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  line-height: 1.45;
+  color: #0f172a;
+  background: linear-gradient(180deg, #f7fbff 0%, #eef6ff 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 2rem;
 }
-nav ul{
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    font-size: 150%;
 
+.site-header {
+  max-width: 1100px;
+  margin: 0 auto 1.5rem;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
 }
-nav ul a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
 }
+.site-title {
+  font-size: 2.25rem;
+  margin: 0;
+  color: #0b1220;
+}
+.tagline {
+  color: #334155;
+}
+
+/* Navigation */
+.main-nav {
+  margin-bottom: 0.6rem;
+}
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  list-style: none;
+  justify-content: center;
+  padding: 0.35rem 0.25rem;
+}
+.nav-list li {
+  background: linear-gradient(90deg, #fff, #f8fafc);
+  border-radius: 999px;
+}
+.nav-list a {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  color: #0b1220;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 180ms ease;
+}
+.nav-list a:hover {
+  transform: translateY(-2px);
+  background: #e6f0ff;
+  border-radius: 999px;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-top: 0.75rem;
+  box-shadow: 0 8px 24px rgba(11, 17, 32, 0.06);
+}
+.intro h2 {
+  margin-bottom: 0.5rem;
+  color: #0b1220;
+}
+
+.site-footer {
+  max-width: 1100px;
+  margin: 2rem auto 0;
+  padding: 1rem;
+  text-align: center;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 560px) {
+  .site-title {
+    font-size: 1.6rem;
+  }
+  .nav-list {
+    gap: 0.4rem;
+    justify-content: center;
+  }
+  .nav-list a {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small utility */
+.hidden {
+  display: none;
+}
+
+/* End of file */
